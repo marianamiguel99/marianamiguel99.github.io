@@ -1,0 +1,16 @@
+# User config
+author: "Mariana Miguel"
+tagline: "Pineapple Certfied Jekyll Theme"
+description: "my portfolio right now"
+keywords: "Pineapple, Pineapple Pizza, Pineapple House"
+email: "marmiguelcs99@gmail.com"
+linkedin: "https://www.linkedin.com/"
+twitter: "https://twitter.com/"
+github: "https://github.com/"
+
+# Site config
+baseurl: "/portfolio"
+highlighter: rouge
+sass:
+  sass_dir: assets/scss
+  style: compressed
