@@ -1,34 +1,42 @@
 .container {
-	display: block;
 	margin: 0 auto;
 	max-width: 70em;
 	padding: 0 3rem;
-	@include clearfix;
 }
 
 .header {
-	background: $color-white;
-	padding: 3rem 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: $color-light;
+}
+ 
+#heart {
+    width: 2.5rem;
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.5s linear;
 }
 
-.logo {
-	float: left;
-	font-size: 1.8rem;
-	font-weight: 600;
-	margin: 0;
-	line-height: 1;
+#heartani {
+    width: 2.5rem;
+    z-index: 1;
+    opacity: 1;
+}
+
+#heart:hover {
+    opacity: 0;
 }
 
 .nav {
-	float: right;
 
-	a {
-		@extend .logo;
+	a:hover {
+
 	}
 }
 
 .content {
-	background: $color-white;
+	background: $color-light;
 	padding: 7rem 0 0;
 	margin-bottom: 31.24rem;
 	position: relative;
@@ -106,7 +114,7 @@
 
 		&:before {
 			content: "View Project";
-			color: $color-white;
+			color: $color-light;
 			@extend .h2;
 			font-weight: 800;
 			position: absolute;
@@ -235,7 +243,7 @@
 	padding: 5rem 0;
 
 	a {
-		color: $color-white;
+		color: $color-light;
 		display: inline-block;
 
 		&:hover {
@@ -334,7 +342,7 @@
 			height: 1px;
 			bottom: -4px;
 			left: 0;
-			background-color: $color-white;
+			background-color: $color-light;
 			visibility: hidden;
 			-webkit-transform: scaleX(0);
 			transform: scaleX(0);
@@ -345,7 +353,7 @@
 }
 
 .footer {
-	background: $color-alabaster;
+	background: $color-light;
 	bottom: 0;
 	left: 0;
 	padding: 5rem 0;

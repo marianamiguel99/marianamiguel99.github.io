@@ -1,12 +1,14 @@
 # User config
 author: "Mariana Miguel"
-tagline: "Pineapple Certfied Jekyll Theme"
-description: "my portfolio right now"
-keywords: "Pineapple, Pineapple Pizza, Pineapple House"
+tagline: "My portfolio website"
+description: "product designer and illustrator, cant code"
+keywords: "Portfolio, Mariana, Miguel, Projects, Work, Product Design, Product, UX, UI, Design, Illustration, Designer, Junior, Lisbon, Portugal"
 email: "marmiguelcs99@gmail.com"
 linkedin: "https://www.linkedin.com/"
 twitter: "https://twitter.com/"
 github: "https://github.com/"
+behance: "https://www.behance.net/marianamcs"
+instagram: "https://www.instagram.com/ogsfr/"
 
 # Site config
 baseurl: "/portfolio"
