@@ -6,33 +6,39 @@
 
 .header {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
+	justify-content: right;
 	background: $color-light;
+
+	li {
+		padding: 1.5rem;
+	}
+	
+	nav {
+	   ul {
+		font-size: 6rem;
+	    }
+     }
 }
  
+#heartani {
+	position: fixed;
+    width: 3.5rem;
+    margin: 4rem;
+    z-index: 1;
+    opacity: 1;
+}
+
 #heart {
-    width: 2.5rem;
+	position: fixed;
+    width: 3.5rem;
+    margin: 4rem;
     z-index: 2;
     opacity: 1;
     transition: opacity 0.5s linear;
 }
 
-#heartani {
-    width: 2.5rem;
-    z-index: 1;
-    opacity: 1;
-}
-
 #heart:hover {
     opacity: 0;
-}
-
-.nav {
-
-	a:hover {
-
-	}
 }
 
 .content {
@@ -58,13 +64,17 @@
 .intro {
 	@media (min-width: $breakpoint-medium) {
 		p {
-			font-size: 2.7rem;
-			max-width: 66.66666%;
+			font-size: 4rem;
 		}
+	}
+
+	p {
+		margin-left: 10rem;
 	}
 }
 
 .projects-list {
+
 	@media (min-width: $breakpoint-small) {
 		margin-left: -1.5rem;
 		margin-right: -1.5rem;
@@ -82,7 +92,7 @@
 
 	@media (min-width: $breakpoint-medium) {
 		li {
-			width: 33.33333%;
+			width: 33%;
 		}
 	}
 
@@ -96,11 +106,12 @@
 
 	a {
 		display: block;
-
+		
 		&:hover {
 			.img-wrapper {
 				&:before {
 					opacity: 1;
+					
 				}
 				&:after {
 					opacity: .45;
@@ -111,17 +122,15 @@
 
 	.img-wrapper {
 		position: relative;
-
+		
 		&:before {
-			content: "View Project";
+			content: "see everything";
 			color: $color-light;
 			@extend .h2;
 			font-weight: 800;
 			position: absolute;
 			top: 50%;
-			left: 50%;
-			margin-top: -.5rem;
-			margin-left: -4.4rem;
+			left: 35%;
 			opacity: 0;
 			-webkit-transition: all .5s ease-in-out;
     		transition: all .5s ease-in-out;
@@ -131,7 +140,7 @@
 		}
 
 		&:after {
-			background: #000;
+			background: rgb(170, 14, 131);
 			content: "";
 			display: block;
 			position: absolute;
@@ -144,6 +153,7 @@
     		transition: all .5s ease-in-out;
     		z-index: 1;
 		}
+
 	}
 
 	img {
@@ -239,7 +249,7 @@
 }
 
 .project-navigation {
-	background: $color-black;
+	background: $color-dark;
 	padding: 5rem 0;
 
 	a {
@@ -356,10 +366,18 @@
 	background: $color-light;
 	bottom: 0;
 	left: 0;
-	padding: 5rem 0;
-	position: fixed;
 	right: 0;
 	z-index: -1;
+	position: fixed;
+
+	li {
+		display: flex;
+		float: left;
+	}
+
+	h3 {
+		font-size: 1.5rem;
+	}
 }
 
 .contact,
@@ -367,11 +385,12 @@
 	@media (min-width: $breakpoint-medium) {
 		float: left;
 		margin-bottom: 0;
-		width: 33.33333%;
+		width: 33%;
 	}
 }
 
 .contact,
 .follow {
-	margin-bottom: 3rem;
+	margin-bottom: 2rem;
+	float: left;
 }

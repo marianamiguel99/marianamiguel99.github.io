@@ -6,7 +6,7 @@ html {
 body {
 	background: $color-light;
 	color: $color-dark;
-	font-family: $font-poppins;
+	font-family: $font-degular;
 	font-size: 1.8em;
 	line-height: 1.6;
 	font-weight: 600;
@@ -28,7 +28,7 @@ h2,
 .h2 {	
 	color: $color-dark;
 	display: block;
-	font-family: $font-lekton;
+	font-family: $font-degular;
     font-size: 1rem;
     font-weight: 400;
     letter-spacing: .2rem;
@@ -40,7 +40,7 @@ h2,
 h3,
 .h3 {
 	color: $color-dark;
-	font-family: $font-poppins;
+	font-family: $font-degular;
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 1;
@@ -73,7 +73,7 @@ img {
 }
 
 hr {
-	background: $color-silver-chalice;
+	background: $color-light;
 	border: 0;
 	display: block;
 	height: 1px;
@@ -103,3 +103,38 @@ abbr[title] {
 		}
 	}
 }
+
+
+/*SCROLLBAR*/
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  ::-webkit-scrollbar-track {
+    background:$color-dark;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #eb6394;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #eb6394;
+  }
+
+/* TEXT SELECTION*/
+
+::-webkit-selection { 
+    color: var(--beige);
+    background: rgba(248,139,178,0.65);
+  }
+
+  ::-moz-selection { 
+    color: var(--beige);
+    background: rgba(248,139,178,0.65);
+  }
+  
+  ::selection {
+    color: var(--beige);
+    background: rgba(248,139,178,0.65);
+  }
+
