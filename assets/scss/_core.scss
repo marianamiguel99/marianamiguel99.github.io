@@ -124,17 +124,50 @@ abbr[title] {
 /* TEXT SELECTION*/
 
 ::-webkit-selection { 
-    color: var(--beige);
-    background: rgba(248,139,178,0.65);
+    color: $color-dark;
+    background: $color-pink;
   }
 
   ::-moz-selection { 
-    color: var(--beige);
-    background: rgba(248,139,178,0.65);
+    color: $color-dark;
+    background: $color-pink;
   }
   
   ::selection {
-    color: var(--beige);
-    background: rgba(248,139,178,0.65);
+    color: $color-dark;
+    background: $color-pink;
   }
 
+
+/* TOOLTIP */
+
+.popover-item{
+	position: relative;
+  }
+
+.popover-content{
+	display:none;
+	position: absolute;
+	left: 105%;
+	display: none;
+	font-size: 1.2rem;
+	background-color: rgba(230, 230, 230, 1);
+	padding: 10px 20px;
+	border-radius: 16px;
+	font-family: $font-degular;
+	font-weight: normal;
+	z-index:111;
+	width:300px;
+  }
+
+  .popover-content:hover{
+	display:none!important;
+  }
+
+  .popover-item:hover .popover-content{
+	display: block;
+  }
+  
+  .popover-content h1{
+	font-size:20px;
+  }
