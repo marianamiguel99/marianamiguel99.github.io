@@ -15,18 +15,11 @@
 	
 	nav {
 	   ul {
-		font-size: 6rem;
+		font-size: calc(1rem + 5vw);
 	    }
      }
 }
  
-#heartani {
-	position: fixed;
-    width: 3.5rem;
-    margin: 4rem;
-    z-index: 1;
-    opacity: 1;
-}
 
 #heart {
 	position: fixed;
@@ -34,12 +27,23 @@
     margin: 4rem;
     z-index: 2;
     opacity: 1;
-    transition: opacity 0.5s linear;
+    transition: width 0.3s ease, opacity 0.3s ease;
 }
 
 #heart:hover {
-    opacity: 0;
+	width: 5rem;
+	opacity: 0.8;
 }
+
+#star {
+	position: absolute;
+	width: 7rem;
+	right: 9%;
+	top: 17%;
+}
+
+}
+
 
 .content {
 	background: $color-light;
@@ -69,7 +73,19 @@
 	}
 
 	p {
-		margin-left: 10rem;
+		margin-left: 4rem;
+	}
+
+	.name {
+		font-size: calc(2rem + 11vw)
+	}
+
+	.illustrator {
+		font-style: italic; 
+	}
+
+	.illustrator:hover {
+		text-shadow: 10px 10px 60px #fff, 
 	}
 }
 

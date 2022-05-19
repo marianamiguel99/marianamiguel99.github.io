@@ -17,9 +17,9 @@
 	<main class="content">
 
 		<section class="intro">
-			<p> Mariana Miguel </p>
-			<div class="container">
-				<p> product designer and illustrator</p>
+			<object type="image/svg+xml" data="star.svg" alt="twinkling star" id="star"></object>
+			<p class="name"> Mariana Miguel </p>
+			<p> product designer &<span class="illustrator"> illustrator</span></p>
 			</div>
 		</section>
 		
@@ -32,7 +32,9 @@
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
 								<div class="img-wrapper">
-									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
+									<img src="{{ item.project.logo | prepend: site.baseurl }}"  alt="{{ item.project.title }}" 
+									data-tooltip-container
+                                    data-tooltip-label="Click me"/>
 								</div>
 								<span class="h2">{{ item.project.type }}</span>
 								<h3>{{ item.project.title }}</h3>
@@ -49,6 +51,7 @@
 	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/home.js" | prepend: site.baseurl }}"></script>
+	<script src="/assets/scripts/tooltip.js"></script>
 	
 </body>
 </html>
