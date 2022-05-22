@@ -12,12 +12,16 @@
 	li {
 		padding: 1.5rem;
 	}
-	
-	nav {
-	   ul {
+
+	a:hover {
+		color: $color-pink;
+		padding: 2rem;
+		transition: all .3s ease-in-out;
+	}
+
+    ul {
 		font-size: calc(1rem + 5vw);
-	    }
-     }
+	}
 }
  
 
@@ -63,11 +67,6 @@
 	}
 }
 
-.intro,
-.projects {
-	padding: 0 0 5rem;
-}
-
 .intro {
 	@media (min-width: $breakpoint-medium) {
 		p {
@@ -75,9 +74,13 @@
 		}
 	}
 
-	p {
+	h1 {
 		margin-left: 4rem;
-		top: 10%;
+		margin-bottom: 5rem;
+	}
+	
+	p {
+		font-size: 6rem;
 	}
 
 	.name {
@@ -89,7 +92,8 @@
 	}
 
 	.illustrator:hover {
-		text-shadow: 10px 10px 60px #fff, 
+		text-shadow: 0px 0px 20px #fff;
+		transition: all .5s ease-in-out;
 	}
 	
 }
@@ -398,6 +402,20 @@
 
 	h3 {
 		font-size: 1.5rem;
+	}
+}
+
+.pagecontent {
+	margin-top: 10rem;
+	margin-left: 10rem;
+
+	h1 {
+		font-size: 6rem;
+	}
+
+	p {
+		margin-top: 3rem;
+		font-size: 2.5rem;
 	}
 }
 
