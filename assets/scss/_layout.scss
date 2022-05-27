@@ -2,6 +2,11 @@
 	margin: 0 auto;
 	max-width: 70em;
 	padding: 0 3rem;
+
+	h2 {
+		margin-left: 1rem;
+		margin-bottom: 3rem;
+	}
 }
 
 .header {
@@ -11,6 +16,11 @@
 
 	li {
 		padding: 1.5rem;
+	}
+
+	a {
+		padding: 1,5rem;
+		transition: all .3s ease-in-out;
 	}
 
 	a:hover {
@@ -27,8 +37,8 @@
 
 #heart {
 	position: fixed;
-    width: 3.5rem;
-    margin: 4rem;
+    width: 4.5rem;
+    margin: 5.5rem;
     z-index: 2;
     opacity: 1;
 }
@@ -49,6 +59,11 @@
 	width: 7rem;
 	right: 9%;
 	top: 17%;
+}
+
+#tagline {
+	margin-left: 4rem;
+	margin-bottom: 10rem;
 }
 
 
@@ -84,7 +99,8 @@
 	}
 
 	.name {
-		font-size: calc(2rem + 11vw)
+		font-size: calc(2rem + 11vw);
+		margin-bottom: 0;
 	}
 
 	.illustrator {
@@ -406,16 +422,41 @@
 }
 
 .pagecontent {
-	margin-top: 10rem;
-	margin-left: 10rem;
+	background: $color-light;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	z-index: 1;
+
+	@media (min-width: $breakpoint-medium) {
+		margin-bottom: 23.42rem;
+	}
+	
 
 	h1 {
-		font-size: 6rem;
+		font-size: 5rem;
+		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='pink' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
+   	    background-position: 0 100%;
+    	background-size: auto 1rem;
+		width: 30rem;
+    	background-repeat: repeat-x;
+    	text-decoration: none;
 	}
 
 	p {
 		margin-top: 3rem;
 		font-size: 2.5rem;
+	}
+
+    .aboutme {
+		padding-left: 7rem;
+		padding-top: 18rem;
+		margin-bottom: 10rem;
+	}
+
+	.profile {
+		width: 40vw;
+		margin-right: 7rem;
 	}
 }
 
