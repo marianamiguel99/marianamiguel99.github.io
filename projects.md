@@ -1,6 +1,4 @@
 ---
 title: my work
-layout: page
+layout: work
 ---
-
-my name is joe i live next door

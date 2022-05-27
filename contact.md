@@ -1,6 +1,6 @@
 ---
 title: talk to me
-layout: page
+layout: contact
 ---
  hi hello
  

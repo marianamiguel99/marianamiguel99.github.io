@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta name="author" content="{{ site.author }}">
@@ -11,19 +11,20 @@
     
 	{% include header.html %}
 	<main class="pagecontent">
-		
-			<div class="aboutme">
-			  <h1>Funky Town!!</h1>
-			  <p>Hi! I’m Mariana, a Junior Product Designer based in Lisbon, Portugal, currently studying Digital Experience Design @ FBAUL 🙂 </p>
-				<hr>
-				<p>I’m a creative problem solver and a curious world explorer, learning and growing everyday. Interested in every facet of experience creation, fascinated by people and psychology. I enjoy developing end-to-end projects, always focused on human-centered design.</p>
-				<hr>
-				<p>I'm also an illustrator and a pianist because I can't keep my hands still! 🖌️🎹💖</p>
-			</div>
+		<ul class="projects-list">
+            {% for item in site.categories.projects reversed %}
+                <li>
+                    <a href="{{ item.url | prepend: site.baseurl }}">
+                        <div class="img-wrapper">
+                            <img src="{{ item.project.logo | prepend: site.baseurl }}"  alt="{{ item.project.title }}" />
+                        </div>
+                        <span class="h2">{{ item.project.type }}</span>
+                        <h3>{{ item.project.title }}</h3>
+                    </a>
+                </li>
+            {% endfor %}
+        </ul>
 
-			<img src="./assets/images/profile.png" alt="profile picture stylized like paper shreds" class="profile">
-	
-			
 	</main>
 	
 	{% include footer.html %}

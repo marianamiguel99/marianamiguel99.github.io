@@ -460,17 +460,22 @@
 	}
 }
 
-.contact,
 .follow {
 	@media (min-width: $breakpoint-medium) {
 		float: left;
 		margin-bottom: 0;
-		width: 33%;
 	}
 }
-
-.contact,
+ 
 .follow {
 	margin-bottom: 2rem;
 	float: left;
+
+	.pinkslash {
+		color: $color-pink;
+		font-weight: bold;
+	}
+	h3 {
+		margin-left: 5rem;
+	}
 }
