@@ -12,7 +12,7 @@
 .header {
 	display: flex;
 	justify-content: right;
-	background: $color-light;
+	background: $color-green;
 
 	li {
 		padding: 1.5rem;
@@ -68,7 +68,7 @@
 
 
 .content {
-	background: $color-light;
+	background: $color-green;
 	padding: 7rem 0 0;
 	margin-bottom: 31.24rem;
 	position: relative;
@@ -166,7 +166,7 @@
 		
 		&:before {
 			content: "see everything";
-			color: $color-dark;
+			color: $color-white;
 			@extend .h2;
 			font-weight: 800;
 			position: absolute;
@@ -290,11 +290,11 @@
 }
 
 .project-navigation {
-	background: $color-dark;
+	background: $color-white;
 	padding: 5rem 0;
 
 	a {
-		color: $color-light;
+		color: $color-green;
 		display: inline-block;
 
 		&:hover {
@@ -393,7 +393,7 @@
 			height: 1px;
 			bottom: -4px;
 			left: 0;
-			background-color: $color-light;
+			background-color: $color-green;
 			visibility: hidden;
 			-webkit-transform: scaleX(0);
 			transform: scaleX(0);
@@ -404,7 +404,7 @@
 }
 
 .footer {
-	background: $color-light;
+	background: $color-green;
 	bottom: 0;
 	left: 0;
 	right: 0;
@@ -422,7 +422,7 @@
 }
 
 .pagecontent {
-	background: $color-light;
+	background: $color-green;
 	position: relative;
 	display: flex;
 	justify-content: space-around;
@@ -438,7 +438,7 @@
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='pink' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
    	    background-position: 0 100%;
     	background-size: auto 1rem;
-		width: 30rem;
+		width: 25.5rem;
     	background-repeat: repeat-x;
     	text-decoration: none;
 	}
@@ -450,13 +450,30 @@
 
     .aboutme {
 		padding-left: 7rem;
-		padding-top: 18rem;
+		padding-top: 10rem;
 		margin-bottom: 10rem;
 	}
 
 	.profile {
 		width: 40vw;
-		margin-right: 7rem;
+		margin-right: 4rem;
+		margin-top: 10rem;
+	}
+}
+
+.pagecontentcontact {
+	background: $color-green;
+	position: relative;
+	padding: 10rem;
+	z-index: 1;
+
+	@media (min-width: $breakpoint-medium) {
+		margin-bottom: 23.42rem;
+	}
+
+	.contacttitle {
+		font-size: 8rem;
+		color: $color-pink;
 	}
 }
 
