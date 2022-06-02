@@ -1,18 +1,16 @@
 # User config
 author: "Mariana Miguel"
 tagline: "My portfolio website"
-description: "product designer and illustrator, cant code"
+description: "product designer and illustrator portfolio"
 keywords: "Portfolio, Mariana, Miguel, Projects, Work, Product Design, Product, UX, UI, Design, Illustration, Designer, Junior, Lisbon, Portugal"
 email: "marmiguelcs99@gmail.com"
-linkedin: "https://www.linkedin.com/"
-twitter: "https://twitter.com/"
-github: "https://github.com/"
-behance: "https://www.behance.net/marianamcs"
+linkedin: "https://www.linkedin.com/in/marianamcss/"
+github: "https://github.com/marianamiguel99/"
+behance: "https://www.behance.net/marianamcs/"
 instagram: "https://www.instagram.com/ogsfr/"
 
 # Site config
 baseurl: "/portfolio"
-highlighter: rouge
 sass:
   sass_dir: assets/scss
   style: compressed
